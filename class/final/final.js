@@ -71,10 +71,13 @@ const join = () => {
     입력창 모두 입력인지 확인 내림차순으로=> 입력 오류시 오류 메시지
     */
 
+    let validation = true
+
     //이메일 입력여부, @포함 여부 확인
     let email = document.getElementById("email").value
     if(email === "" || !email.includes('@')){
         document.getElementById("email_error").innerText="이메일이 올바르지 않습니다."
+        validation = false
     }else{
         document.getElementById("email_error").innerText=""
     }
@@ -83,6 +86,7 @@ const join = () => {
     let name = document.getElementById("name").value
     if(name === ""){
         document.getElementById("name_error").innerText="이름이 올바르지 않습니다."
+        validation = false
     }else{
         document.getElementById("name_error").innerText=""
     }
@@ -91,12 +95,14 @@ const join = () => {
     let pw1 = document.getElementById("pw1").value
     if(pw1 === ""){
         document.getElementById("pw1_error").innerText="비밀번호를 입력해주세요."
+        validation = false
     }else{
         document.getElementById("pw1_error").innerText=""
     }
     let pw2 = document.getElementById("pw2").value
     if(pw2 === ""){
         document.getElementById("pw2_error").innerText="비밀번호를 입력해주세요."
+        validation = false
     }else{
         document.getElementById("pw2_error").innerText=""
     }
@@ -104,26 +110,30 @@ const join = () => {
     //pw1===pw2 확인
     if(pw1 !== pw2){
         document.getElementById("pw2_error").innerText="비밀번호가 일치하지 않습니다."
+        validation = false
     }else{
         document.getElementById("pw2_error").innerText=""
     }
 
     //지역 선택 여부 확인
-
-    var selectedElement = document.getElementById("location");
-    var optionVal = selectedElement.options[selectedElement.selectedIndex].value;
-
-    if(optionVal===""){
-        alert(optionVal)
+    let location = document.getElementById("location").value
+    if(location !== "서울"&&location !== "경기"&&location !== "인천"){
         document.getElementById("location_error").innerText="장소를 선택해주세요."
+        validation = false
     }else{
-        document.getElementById("pw2_error").innerText=""
+        document.getElementById("location_error").innerText=""
     }
 
     //성별 선택여부 확인
     if(!document.getElementById("female").checked && !document.getElementById("male").checked){
         document.getElementById("gender_error").innerText="성별을 선택해주세요."
+        validation = false
     }else{
         document.getElementById("gender_error").innerText=""
     } 
+
+    if(validation){
+        //입력 조건 충족
+        alert("회원가입이 완료되었습니다!")
+    }
 }
