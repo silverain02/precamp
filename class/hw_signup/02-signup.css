@@ -1,0 +1,75 @@
+
+* {
+    box-sizing:border-box;
+}
+
+.back1{
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+}
+
+.back2{
+    /* 회원가입 배경 */
+
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 670px;
+    height: 960px;
+    left: 625px;
+    top: 60px;
+
+    background: #FFFFFF;
+    border: 1px solid #AACDFF;
+    box-shadow: 7px 7px 39px rgba(0, 104, 255, 0.25);
+    border-radius: 20px;
+}
+
+.group5{
+    position: absolute;
+
+    width: 470px;
+    height: 818px;
+    left: 725px;
+    top: 132px;
+}
+
+.group4{
+    position: absolute;
+
+    width: 466px;
+    height: 80px;
+    left: 725px;
+    top: 589px;
+}
+
+.group2{
+    position: absolute;
+    width: 466px;
+    height: 80px;
+    left: 725px;
+    top: 387px;
+}
+.group1{
+    position: absolute;
+    width: 466px;
+    height: 80px;
+    left: 725px;
+    top: 286px;
+}
+
+
+#vector1{
+position: absolute;
+width: 466px;
+height: 0px;
+left: 725px;
+top: 669px;
+
+border: 1px solid #CFCFCF;
+}
+    

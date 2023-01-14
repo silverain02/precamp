@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+    <link href="./final.css" rel="stylesheet">
+    <script src="./final.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        
+        <div class="wrapper_header">VocaAllday 회원가입</div>
+        
+        <div class="wrapper_body">
+            <input class="text_box" id="email" placeholder="이메일을 입력해 주세요.">
+            <div class="error"id="email_error"></div>
+            <input class="text_box" id="name" placeholder="이름을 입력해 주세요.">
+            <div class="error"id="name_error"></div>
+            <input class="text_box" id="pw1" placeholder="비밀번호를 입력해 주세요.">
+            <div class="error"id="pw1_error"></div>
+            <input class="text_box" id="pw2" placeholder="비밀번호를 다시 입력해 주세요.">
+            <div class="error"id="pw2_error"></div>
+            <div class="phone">
+                <div class="phone_num">
+                    <input type="text" class=num_box id="p1" oninput="changeFocus1()" maxlength="3">-
+                    <input type="text" class=num_box id="p2" oninput="changeFocus2()" maxlength="4">-
+                    <input type="text" class=num_box id="p3" maxlength="4" oninput="activate_trans_button()">
+                </div>
+                <div class="phone_trans">
+                    <div class="trans_num_text" id="trans_num">000000</div>
+                    <button class="trans_num_box" id="trans_button"onclick="transfer()" disabled="true">인증번호 전송</button>
+                </div>
+                <div class="phone_trans">
+                    <div class="trans_num_text" id="timer">3:00</div>
+                    <button class="trans_num_box" id="complite" disabled="true" onclick="submit()">인증완료</button>
+                </div>
+            </div>
+            <select class="text_box" id="location" name="location">
+                <option disabled selected hidden value="" >지역을 선택하세요</option>
+                <option value="서울">서울</option>
+                <option value="경기">경기</option>
+                <option value="인천">인천</option>
+            </select>
+            <div class="error" id="location_error"></div>
+            <div class="gender" id="gender">
+                <input type="radio" id="female" name="gender">여성
+                <input type="radio" id="male" name="gender">남성
+            </div>
+            <div class="error" id="gender_error"></div>
+            <div class="dividedLine"></div>
+        </div>
+
+        <div class="wrapper_footer">
+            <button class="join" id="join_button" disabled="true" onclick="join()">가입하기</button>
+        </div>
+
+    </div>
+</body>
+</html>

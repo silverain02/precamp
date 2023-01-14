@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <link href="./styles/home.css" rel="stylesheet">
+    <script src="./home.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="wrapper_header">
+            <div class="contents_title">
+                <div class="title">Updated news</div>
+                <div class="subtitle">TODAY STORY</div>
+            </div>
+            <div class="dividedLine"></div>
+            <div class="contents_body"><br>
+                1/12 프로젝트 회의 <br>
+                1/13 학원 알바 <br>
+                1/17 체인위크 행사
+            </div>
+        </div>
+
+        <div class="wrapper_body">
+            <div class="contents_title">
+                <div class="title">To do list</div>
+                <div class="subtitle">TODAY WORK</div>
+            </div>
+            <div class="todo">
+                <div class="todo_header">
+                    <input class="text" id="todo_text" placeholder="할 일을 입력하세요">
+                    <button class="submit" onclick="submit_text()">입력</button>
+                </div>
+                <div class="todo_body">
+                    <table class="todoTable">
+                        <tr>
+                            <th class="todoTable_check">체크</th>
+                            <th class="todoTable_title">내용</th>
+                            <th class="todoTable_importance">중요도</th>
+                        </tr>
+                        <tr>
+                            <td class="todoTable_check"><input type="checkbox" id="ck1" ></td>
+                            <td class="todoTable_title"><span id="t1"></span></td>
+                            <td class="todoTable_importance"><select class="importance_sel">
+                                <option>💖</option>
+                                <option>💛</option>
+                                <option>💚</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td class="todoTable_check"><input type="checkbox" id="ck2" onclick="delete2()"></td>
+                            <td class="todoTable_title"><span id="t2"></span></td>
+                            <td class="todoTable_importance"><select class="importance_sel">
+                                <option>💖</option>
+                                <option>💛</option>
+                                <option>💚</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td class="todoTable_check"><input type="checkbox" id="ck3"></td>
+                            <td class="todoTable_title"><span id="t3"></span></td>
+                            <td class="todoTable_importance"><select class="importance_sel">
+                                <option>💖</option>
+                                <option>💛</option>
+                                <option>💚</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td class="todoTable_check"><input type="checkbox" id="ck4"></td>
+                            <td class="todoTable_title"><span id="t4"></span></td>
+                            <td class="todoTable_importance"><select class="importance_sel">
+                                <option>💖</option>
+                                <option>💛</option>
+                                <option>💚</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td class="todoTable_check"><input type="checkbox" id="ck5"></td>
+                            <td class="todoTable_title"><span id="t5"></span></td>
+                            <td class="todoTable_importance"><select class="importance_sel">
+                                <option>💖</option>
+                                <option>💛</option>
+                                <option>💚</option>
+                            </select></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

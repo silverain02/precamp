@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>이은비님의 미니홈피 :: 사이좋은 사람들, 싸이월드</title>
+    <link href="./styles/index.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c50c4da782.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <div class="background">
+        <div class="outerbox">
+            <div class="wrapper">
+                <div class = "wrapper_left">
+                    <div class="wrapper_left_header">
+                        <!-- TODAY 0 | TOTAL 12345 -->
+                        <div class="today">
+                            <span>TODAY</span>
+                            <span>0</span>
+                            <span>| TOTAL</span>
+                            <span>12345</span>
+
+                        </div>
+                    </div>
+                    <div class="wrapper_left_body">
+                        <div class="left_body_header">
+                            <div class="left_body_header_gray"></div>
+                            <div class="left_body_header_line"></div>
+                        </div>
+                        <div class="left_body_profile">
+                            <div class="info">
+                                <div class ="profile_detail">
+                                    <i class="fa-regular fa-user"></i> 이름
+                                </div>
+                                <div class ="profile_detail">
+                                    <i class="fa-solid fa-phone"></i> Phone
+                                </div>
+                                <div class ="profile_detail">
+                                    <i class="fa-regular fa-envelope"></i> E-mail
+                                </div>
+                                <div class ="profile_detail">
+                                    <i class="fa-regular fa-star"></i> 인스타그램
+                                </div>
+                            </div>
+                        </div>
+                        <div class="left_body_footer">
+                            <div class="wrapper_feel">
+                                <div class="mood">오늘의 기분</div>
+                                <select class="mood_sel">
+                                    <option>😄최고</option>
+                                    <option>😡빡침</option>
+                                    <option>😥흐엉</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "wrapper_right">
+                    <div class="wrapper_right_header">
+                        <div class="right_header_title">사이좋은 사람들, 싸이월드</div>
+                        <div class="right_header_setting">사생활 보호 설정 ▶</div>
+                    </div>
+                    <div class="wrapper_right_body">
+                        <iframe id="contentFrame" src="./home.html"></iframe>
+                    </div>
+                </div>
+                <!--여기--> 
+                <div class="navigation">
+                    <div class="navigation_item" id="menuHome" onclick="menuHome()">홈</div>
+                    <div class="navigation_item" id="menuJukebox" onclick="menuJukebox()">주크박스</div>
+                    <div class="navigation_item" id="menuGame" onclick="menuGame()">게임</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
